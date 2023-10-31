@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Случайный цвет</title>
+  <style>
+    /* CSS стили для применения случайного цвета */
+    .random-color {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Рандомный цвет</h1>
+
+  <div class="random-color">Элемент 1</div>
+  <p class="random-color">Элемент 2</p>
+  <h2 class="random-color">Элемент 3</h2>
+
+  <script>
+    // JavaScript код для вызова функции apply_random_color()
+    function applyRandomColor(elements) {
+      let colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink"];
+
+      for (let i = 0; i < elements.length; i++) {
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        elements[i].style.color = randomColor;
+      }
+    }
+
+    // Вызов функции apply_random_color() при загрузке страницы
+    window.onload = function() {
+      let elements = document.getElementsByClassName("random-color");
+      applyRandomColor(elements);
+    }
+  </script>
+</body>
+</html>
