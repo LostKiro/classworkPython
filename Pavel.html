@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .class1 {
+        border-radius: 50%;
+        background: aqua;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+        .class2:hover {
+        border-radius: 30%;
+        background: blueviolet;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+            .class3:hover {
+        border-radius: 15%;
+        background: red;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+            .class2{
+                animation-duration: 3s;
+                animation-name: muanim;
+            }
+            @keyframes muanim {
+                from {
+                    border-radius: 1%;
+                    margin-inside: 200px;
+                }
+                to {
+                    margin-inside: 0;
+                    border-radius: 50%;
+                }
+            }
+</style>
+<h1>Страница куница</h1>
+<div class = "class1">
+    <div class = "class2">
+        <div class = "class3"></div>
+    </div>
+</div>
+<div >
+    <input class="class2"  name = inp1 value="Enter text"><br>
+    <input class="class3" name = inp2 value="Enter text"><br>
+    <input class="class2" type="button" value="Enter">
+</div>
+
+
+</body>
+</html>
